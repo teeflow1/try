@@ -7,3 +7,6 @@ def home(request):
 
 def property(request):
     return render(request, 'apps/property.html', {})
+
+def listings(request):
+    return render(request, 'apps/listings.html', {})
