@@ -17,13 +17,16 @@ def home(request):
             
            'message from ' + fname, #Subject
             message, # message
-            subject, #subject
+            #subject, #subject
             email, # from email
            ['temitopeayobami995@gmail.com'], # to email
         )
-        return render(request, 'apps/contact.html', {'fname':fname})    
+        return render(request, 'apps/index.html', {'fname':fname}) 
+    else:
+        return render(request, 'apps/index.html', {})
+           
     
-    return render(request, 'apps/index.html', {})
+    
 
 def property(request):
     return render(request, 'apps/property.html', {})
