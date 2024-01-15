@@ -15,7 +15,7 @@ def home(request):
         
         send_mail(
             
-           'message from ' + fname, #Subject
+           message  + fname, #Subject
             message, # message
             #subject, #subject
             email, # from email
