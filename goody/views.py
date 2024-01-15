@@ -6,7 +6,7 @@ from django.core.mail import send_mail
 def home(request):
     
     if request.method == 'POST':
-        fname = request.POST['fname']    
+        name = request.POST['name']    
         lname = request.POST['lname']  
         email = request.POST['email'] 
         subject = request.POST['subject']
@@ -15,13 +15,13 @@ def home(request):
         
         send_mail(
             
-           'message from ' + fname, #Subject
+           'message from ' + name, #Subject
             message, # message
             #subject, #subject
             email, # from email
            ['temitopeayobami995@gmail.com'], # to email
         )
-        return render(request, 'apps/index.html', {'fname':fname}) 
+        return render(request, 'apps/index.html', {'name':name}) 
     else:
         return render(request, 'apps/index.html', {})
            
