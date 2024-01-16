@@ -10,7 +10,7 @@ def home(request):
         lname = request.POST['lname']  
         email = request.POST['email'] 
         subject = request.POST['subject']
-        #message = request.POST['message']
+        message = request.POST['message']
         
         
         send_mail(
