@@ -8,7 +8,7 @@ def home(request):
     if request.method == 'POST':
         name = request.POST['name']    
         lname = request.POST['lname']  
-        #email = request.POST['email'] 
+        email = request.POST['email'] 
         subject = request.POST['subject']
         message = request.POST['message']
         
