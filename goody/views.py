@@ -21,10 +21,10 @@ def home(request):
             email, # from email
            ['temitopeayobami995@gmail.com'], # to email
         )
-        #return render(request, 'apps/index.html', {'name': name}) 
+        return render(request, 'apps/index.html', {'name': name}) 
     else:
         return render(request, 'apps/index.html', {})
-           
+          
     
     
 
