@@ -24,6 +24,8 @@ def home(request):
         return render(request, 'apps/index.html', {'name': name}) 
     else:
         return render(request, 'apps/index.html', {})
+    
+    jfjf
           
     
     
