@@ -25,7 +25,7 @@ def home(request):
     else:
         return render(request, 'apps/index.html', {})
     
-    jfjf
+    jfj
           
     
     
